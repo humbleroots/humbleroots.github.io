@@ -1,0 +1,182 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+    <link href="main.css" type="text/css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Your Basket</title>
+
+</head>
+
+<!--Nav Bar Content-->
+
+<body>
+
+    <div id="nav_bar">
+        <a href="../index.html"><img src="../icons/Clean%20Logo.svg" id="logo"></a>
+        <input type="text" placeholder="Search..." id="nav_search">
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Sign up</a></li>
+            <li><a href="#">Log In</a></li>
+            <a href="basket.html"><img src="../icons/basket.svg" id="shopping_cart"></a>
+        </ul>
+    </div>
+
+
+    <!--Top Content-->
+    <div id="basket">
+
+        <h1 class="basket_banner">Your Basket</h1>
+        <table id="tally">
+            <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td class="item">
+            <a href="item.html" style="color: inherit;text-decoration: none;">        
+            <img src="https://source.unsplash.com/collection/1926640/150x150"> 
+            <h1>Organic Apples</h1></a>
+            <br><br>
+            <p>Suq Farms</p>
+            <div class="item_review">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="far fa-star"></i>    
+            </div> 
+            <br>        
+            <ul class="tags">
+                <li id="tag" class="organic_tag">
+                Organic</li>
+                <li id="tag" class="pesticide_free">
+                Pesticide</li>     
+                    </ul>        
+                </td>
+                
+            <td class="quantity">
+               
+                <input type="number">    
+                
+            </td>
+
+            <td class="price">
+                <h1>$1.73</h1><p>per lb</p>
+            </td>
+            </tr>
+        </table>
+        <div class="subtotal">
+        <h1>Subtotal:</h1>
+        <p>$5.19</p>
+        </div>
+        <br><br><br>
+        <button class="proceed_checkout" onclick="location.href='delivery.html';">Proceed to Checkout <i class="fa  fa-angle-double-right"></i></button>
+    </div>
+
+    <!--Bottom Content-->
+
+    <div id="bottom_content">
+
+        <h1>Have you Considered...</h1>
+
+        <div class="single_item">
+            <a href="item.html" class="item_link">
+                <img src="https://source.unsplash.com/collection/1926640/200x160"><div id="text_container">
+                <p class="product_name">Apples</p>
+                <p class="product_farm">Greenwich Farms</p><h3 class="product_price">$1.59</h3> 
+                <ul class="tags">
+                <li id="tag" class="pesticide_free">
+                Pesticide</li>     
+                    </ul> 
+                </div></a></div>
+
+
+
+        <div class="single_item">
+            <a href="#" class="item_link">
+                <img src="https://source.unsplash.com/4R1YpmGO52I/200x160">
+                <div id="text_container">
+                <p class="product_name">Tomatoes</p>
+                <p class="product_farm">Providence Farms</p>    
+                <h3 class="product_price">$.89</h3> 
+                <ul class="tags">
+                <li id="tag" class="organic_tag">
+                Organic</li>   
+                <li id="tag" class="vegan_tag">
+                Vegan    
+                 </li>   
+                    </ul>
+
+                </div>
+                </a>
+        </div>
+
+
+
+        <div class="single_item">
+            <a href="#" class="item_link">
+                <img src="https://source.unsplash.com/collection/1926682/200x160">
+                <div id="text_container">
+                <p class="product_name">Blueberries</p>
+                <p class="product_farm">Humble Farms</p>    
+                <h3 class="product_price">$2.16</h3> 
+                <ul class="tags">
+                <li id="tag" class="organic_tag">
+                Organic</li>   
+                   
+                    </ul>
+
+                </div>
+                </a>
+        </div>
+
+
+
+        <div class="single_item">
+            <a href="#" class="item_link">
+                <img src="https://source.unsplash.com/5R2JmImJa30/200x160"><div id="text_container">
+                <p class="product_name">Lettuce</p>
+                <p class="product_farm">Vegetable Farms</p><h3 class="product_price">$.93</h3> 
+                <ul class="tags">
+                <li id="tag" class="organic_tag">Organic</li>       
+                    </ul> 
+                </div></a></div>
+
+
+
+
+
+
+    </div>
+
+    <!--More Content-->
+
+    <div id="more_content">
+
+
+
+    </div>
+
+    <!--Footer-->
+
+    <div id="footer">
+        <p>Copyright &copy; 2018 Humble Roots. All Rights Reserved</p>
+
+        <ul>
+            <li><a>Contact us</a></li>
+            <li><a>Subscribe</a></li>
+            <li><a><i class="fab fa-facebook-f"></i></a></li>
+            <li><a><i class="fab fa-twitter"></i></a></li>
+            <li><a><i class="fab fa-instagram"></i></a></li>
+        </ul>
+
+    </div>
+
+</body>
+
+</html>

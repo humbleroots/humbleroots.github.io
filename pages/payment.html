@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+    <link href="main.css" type="text/css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Humble Roots</title>
+
+</head>
+
+<!--Nav Bar Content-->
+
+<body>
+
+    <div id="nav_bar">
+        <a href="../index.html"><img src="../icons/Clean%20Logo.svg" id="logo"></a>
+        <input type="text" placeholder="Search..." id="nav_search">
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Sign up</a></li>
+            <li><a href="#">Log In</a></li>
+            <a href="basket.html"><img src="../icons/basket.svg" id="shopping_cart"></a>
+        </ul>
+    </div>
+
+
+    <!--Top Content-->
+
+    <div id="payment_content">
+
+        <div class="breadcrumbs">
+            <div class="circle" style="margin-left: 10%;">
+                <p>1</p>
+            </div>
+            <div class="connector" style="background-color: #43E97B"></div>
+            <div class="circle">
+                <p>2</p>
+            </div>
+            <div class="connector"></div>
+            <div class="circle" style="background-color: #C8C8C8;">
+                <p>3</p>
+            </div>
+            <br>
+            <h4 style="margin-left: 9.25%; margin-right: 26.5%;">Delivery</h4>
+            <h4 style="margin-right: 25%;">Payment Options</h4>
+            <h4 style="margin-right: 10%;">Summary</h4>
+        </div>
+
+        <div class="quick_summary">
+            <h1>Order Summary</h1>
+            <table>
+                <tr>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>
+                        <h2>Organic Apples</h2>
+                        <p>x3 lbs @ 1.73 / lb</p>
+                    </td>
+
+                    <td>
+                        <h2>$5.19</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2>Delivery:</h2>
+                        <p><strong>Drop-Off:</strong></p>
+                        <p>519 Ventura Drive<br> Santa Cruz, CA 95065<br> United States</p>
+                    </td>
+                    <td>
+                        <h2>$0.00</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2>Subtotal</h2>
+                        <h2>Tax (9%)</h2>
+                    </td>
+
+                    <td>
+                        <h2>$5.19</h2>
+                        <h2>$0.42</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>Total</h3>
+                    </td>
+
+                    <td>
+                        <h3>$5.61</h3>
+                    </td>
+                </tr>
+
+            </table>
+
+
+        </div>
+
+        <div class="payment_information">
+            <h1 class="checkout_process_header">Payment Options </h1>
+            <br>
+            <p>Select your Payment Option:</p>
+            <i class="fa fa-cc-mastercard"></i>
+            <i class="fa fa-cc-visa"></i>
+            <i class="fa fa-cc-discover"></i>
+            <i class="fa fa-cc-amex"></i>
+            <br>
+            <br>
+            <br>
+
+            <input type="text" placeholder="Credit Card Number">
+            <br>
+            <input type="text" placeholder="Cardholders Name">
+            <br>
+            <input type="text" style="width: 20%" placeholder="CVV">
+            <select>
+    <option value="" disabled selected>Month</option>    
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+    <option value="5">5</option>
+	<option value="6">6</option>
+	<option value="7">7</option>
+    <option value="8">8</option>
+	<option value="9">9</option>
+	<option value="10">10</option>
+    <option value="11">11</option>
+	<option value="12">12</option>
+</select>/<input type="text" style="width: 20%; margin-left: 20px;" placeholder="Year">
+
+
+            <button class="basket_link" onclick="location.href='summary.html';">Confirm Payment <i class="fa  fa-angle-double-right"></i></button> <br>
+            <button class="continue_shopping" onclick="location.href='delivery.html';">or Back to Delivery</button>
+
+
+
+        </div>
+
+
+    </div>
+    <!--Footer-->
+
+    <div id="footer">
+        <p>Copyright &copy; 2018 Humble Roots. All Rights Reserved</p>
+
+        <ul>
+            <li><a>Contact us</a></li>
+            <li><a>Subscribe</a></li>
+            <li><a><i class="fab fa-facebook-f"></i></a></li>
+            <li><a><i class="fab fa-twitter"></i></a></li>
+            <li><a><i class="fab fa-instagram"></i></a></li>
+        </ul>
+
+    </div>
+
+</body>
+
+</html>

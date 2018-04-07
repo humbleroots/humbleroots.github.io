@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+    <link href="main.css" type="text/css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Humble Roots</title>
+
+</head>
+
+<!--Nav Bar Content-->
+
+<body>
+
+   <div id="nav_bar">
+        <a href="../index.html"><img src="../icons/Clean%20Logo.svg" id="logo"></a>
+        <input type="text" placeholder="Search..." id="nav_search">
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Sign up</a></li>
+            <li><a href="#">Log In</a></li>
+            <a href="basket.html"><img src="../icons/basket.svg" id="shopping_cart"></a>
+        </ul>
+    </div>
+
+
+    <!--Top Content-->
+
+    <div id="delivery_body">
+
+        <div class="breadcrumbs">
+            <div class="circle" style="margin-left: 10%;">
+                <p>1</p>
+            </div>
+            <div class="connector"></div>
+            <div class="circle" style="background-color: #C8C8C8">
+                <p>2</p>
+            </div>
+            <div class="connector"></div>
+            <div class="circle" style="background-color: #C8C8C8;">
+                <p>3</p>
+            </div>
+            <br>
+            <h4 style="margin-left: 9.25%; margin-right: 26.5%;">Delivery</h4>
+            <h4 style="margin-right: 25%;">Payment Options</h4>
+            <h4 style="margin-right: 10%;">Summary</h4>
+        </div>
+
+        <div id="delivery_content">
+            <h1 class="checkout_process_header">Delivery Options</h1>
+            <br>
+            <div class="delivery_option">
+                <label><input type="radio" name="one" checked value="drop_off"><p class="delivery_option">Drop-Off Location</p></label>
+                <br>
+                <p class="delivery_estimate">Delivery Estimate:</p>
+                <p class="time_estimate">1 Day</p>
+            </div>
+
+            <div class="delivery_option">
+                <label>
+        <input type="radio" name="one" value="home"><p class="delivery_option">Home Delivery</p>  </label>
+                <br>
+                <p class="delivery_estimate">Delivery Estimate:</p>
+                <p class="time_estimate">2 Days</p>
+            </div>
+
+            <div id="delivery_address">
+                <label>Full Name: </label><br><input type="text">
+
+                <br>
+                <label>Address Line 1:</label><br><input type="text">
+                <br>
+                <label>Address Line 2:</label><br><input type="text">
+                <br>
+                <label>City: </label><br><input type="text" style="width: 60%;">
+                <select>
+	<option value="RI">Rhode Island</option>
+	<option value="CA">California</option>
+	<option value="OR">Oregon</option>
+	<option value="WA">Washington</option>
+</select>
+                <br>
+                <label>Zip-Code:</label><br><input type="text" style="width: 20%">
+            </div>
+
+            <script>
+                $("input[type='radio']").change(function() {
+
+                    if ($(this).val() === "home") {
+                        $("#delivery_address").show();
+                    } else {
+                        $("#delivery_address").hide();
+
+                    }
+
+
+                });
+
+            </script>
+
+
+            <div id="action_options">
+                <button class="basket_link" onclick="location.href='payment.html';">Confirm Delivery <i class="fa  fa-angle-double-right"></i></button>
+                <button class="continue_shopping" onclick="location.href='basket.html';">or Back to Basket</button>
+
+            </div>
+
+        </div>
+
+
+
+        <!--MAP MAP MAP MAP MAP MAP MAP MAP MAP-->
+
+        <div id="map"></div>
+        <script>
+            function initMap() {
+                var cc = {
+                    lat: 41.842122,
+                    lng: -71.392363
+                };
+                var pc = {
+                    lat: 41.845740,
+                    lng: -71.438438
+                };
+                var brown = {
+                    lat: 41.826143,
+                    lng: -71.403414
+                };
+
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 12,
+                    center: brown
+                });
+                var marker = new google.maps.Marker({
+                    position: cc,
+                    map: map
+                });
+
+                var marker = new google.maps.Marker({
+                    position: pc,
+                    map: map
+                });
+
+                var marker = new google.maps.Marker({
+                    position: brown,
+                    map: map
+                });
+            }
+
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjSLfI2Wq0fpHMMSdDDTp4KwfD7_R4C4M&callback=initMap">
+
+
+        </script>
+
+    </div>
+    <!--Footer-->
+
+    <div id="footer">
+        <p>Copyright &copy; 2018 Humble Roots. All Rights Reserved</p>
+
+        <ul>
+            <li><a>Contact us</a></li>
+            <li><a>Subscribe</a></li>
+            <li><a><i class="fab fa-facebook-f"></i></a></li>
+            <li><a><i class="fab fa-twitter"></i></a></li>
+            <li><a><i class="fab fa-instagram"></i></a></li>
+        </ul>
+
+    </div>
+
+</body>
+
+</html>

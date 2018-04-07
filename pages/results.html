@@ -1,0 +1,300 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+    <link href="main.css" type="text/css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Humble Roots</title>
+
+</head>
+
+<!--Nav Bar Content-->
+
+<body>
+
+    <div id="nav_bar">
+        <a href="../index.html"><img src="../icons/Clean%20Logo.svg" id="logo"></a>
+        <input type="text" placeholder="Search..." id="nav_search">
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Sign up</a></li>
+            <li><a href="#">Log In</a></li>
+            <a href="basket.html"><img src="../icons/basket.svg" id="shopping_cart"></a>
+        </ul>
+    </div>
+
+
+    <div id="filter_menu">
+        <h3>Refine by:</h3>
+
+        <div id="price_filter">
+            <h4>Price:</h4>
+
+            <div id="ranges">
+                <input type="text" id="price_range">
+                <p>to</p>
+                <input type="text" id="price_range">
+            </div>
+        </div>
+
+        <div id="rating_filter">
+            <h4>Rating:</h4>
+            <div class="rating">
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+
+            </div>
+
+
+        </div>
+
+        <div id="tags_filter">
+            <h4>Tags:</h4>
+            <ul>
+                <li><label><input type="checkbox" name="organic">Organic</label> </li>
+                <li><label><input type="checkbox" name="non_gmo">Non-GMO</label></li>
+                <li><label><input type="checkbox" name="gluten_free">Gluten Free</label></li>
+                <li><label><input type="checkbox" name="vegan">Vegan</label></li>
+                <li><label><input type="checkbox">Pesticide Free</label></li>
+                <li><label><input type="checkbox">Truly Local</label></li>
+
+
+            </ul>
+        </div>
+    </div>
+
+
+    <div id="results_menu">
+        <h1>Results for: "assorted"</h1>
+
+        <div class="dropdown">
+            <label class="sort">Sort by
+        <select class="sort_by_menu">
+  <option>Suggested</option>
+  <option>Price: Low to High</option>
+  <option>Price: High to Low</option>
+  <option>Avg. Customer Review</option>      
+</select></label></div>
+
+
+
+    </div>
+
+    <div id="actual_results">
+
+        <div class="single_item">
+            <a href="item.html" class="item_link">
+                <img src="https://source.unsplash.com/collection/1926640/200x160"><div id="text_container">
+                <p class="product_name">Apples</p>
+                <p class="product_farm">Greenwich Farms</p><h3 class="product_price">$1.59</h3> 
+                <ul class="tags">
+                <li id="tag" class="pesticide_free">
+                Pesticide</li>     
+                    </ul> 
+                </div></a></div>
+
+
+
+        <div class="single_item">
+            <a href="#" class="item_link">
+                <img src="https://source.unsplash.com/4R1YpmGO52I/200x160">
+                <div id="text_container">
+                <p class="product_name">Tomatoes</p>
+                <p class="product_farm">Providence Farms</p>    
+                <h3 class="product_price">$.89</h3> 
+                <ul class="tags">
+                <li id="tag" class="organic_tag">
+                Organic</li>   
+                <li id="tag" class="vegan_tag">
+                Vegan    
+                 </li>   
+                    </ul>
+
+                </div>
+                </a>
+        </div>
+
+
+
+        <div class="single_item">
+            <a href="#" class="item_link">
+                <img src="https://source.unsplash.com/collection/1926682/200x160">
+                <div id="text_container">
+                <p class="product_name">Blueberries</p>
+                <p class="product_farm">Humble Farms</p>    
+                <h3 class="product_price">$2.16</h3> 
+                <ul class="tags">
+                <li id="tag" class="organic_tag">
+                Organic</li>   
+                   
+                    </ul>
+
+                </div>
+                </a>
+        </div>
+
+
+
+        <div class="single_item">
+            <a href="#" class="item_link">
+                <img src="https://source.unsplash.com/5R2JmImJa30/200x160"><div id="text_container">
+                <p class="product_name">Lettuce</p>
+                <p class="product_farm">Vegetable Farms</p><h3 class="product_price">$.93</h3> 
+                <ul class="tags">
+                <li id="tag" class="organic_tag">Organic</li>       
+                    </ul> 
+                </div></a></div>
+        <div class="single_item">
+            <a href="#" class="item_link">
+                <img src="https://source.unsplash.com/AnBKV3nlIZg/200x160"><div id="text_container">
+                <p class="product_name">Lettuce</p>
+                <p class="product_farm">Greenwich Farms</p><h3 class="product_price">$1.33</h3> 
+                <ul class="tags">
+                <li id="tag" class="organic_tag">
+                Organic</li>    
+                <li id="tag" class="pesticide_free">
+                Pesticide</li>     
+                    </ul> 
+                </div></a></div>
+
+
+
+        <div class="single_item">
+            <a href="#" class="item_link">
+                <img src="https://source.unsplash.com/yNB8niq1qCk/200x160">
+                <div id="text_container">
+                <p class="product_name">Carrots</p>
+                <p class="product_farm">Providence Farms</p>    
+                <h3 class="product_price">$1.76</h3> 
+                <ul class="tags">
+                <li id="tag" class="organic_tag">
+                Organic</li>   
+                <li id="tag" class="vegan_tag">
+                Vegan    
+                 </li>   
+                    </ul>
+
+                </div>
+                </a>
+        </div>
+
+
+
+        <div class="single_item">
+            <a href="#" class="item_link">
+                <img src="https://source.unsplash.com/f7FwHomDgzg/200x160">
+                <div id="text_container">
+                <p class="product_name">Peaches</p>
+                <p class="product_farm">Humble Farms</p>    
+                <h3 class="product_price">$2.16</h3> 
+                <ul class="tags">
+                <li id="tag" class="organic_tag">
+                Organic</li>   
+                   
+                    </ul>
+
+                </div>
+                </a>
+        </div>
+
+
+
+        <div class="single_item">
+            <a href="#" class="item_link">
+                <img src="https://source.unsplash.com/BP1Q3Ib_Pyo/200x160"><div id="text_container">
+                <p class="product_name">Tangerines</p>
+                <p class="product_farm">Vegetable Farms</p><h3 class="product_price">$4.37</h3> 
+                <ul class="tags">
+                <li id="tag" class="organic_tag">Organic</li>       
+                    </ul> 
+                </div></a></div>
+
+        <div class="single_item">
+            <a href="#" class="item_link">
+                <img src="https://source.unsplash.com/PIxRDt5Xvkw/200x160"><div id="text_container">
+                <p class="product_name">Limes</p>
+                <p class="product_farm">Coastal Farms</p><h3 class="product_price">$2.19</h3> 
+                <ul class="tags">
+                <li id="tag" class="pesticide_free">
+                Pesticide</li>     
+                    </ul> 
+                </div></a></div>
+
+
+
+        <div class="single_item">
+            <a href="#" class="item_link">
+                <img src="https://source.unsplash.com/4R1YpmGO52I/200x160">
+                <div id="text_container">
+                <p class="product_name">Tomatoes</p>
+                <p class="product_farm">Providence Farms</p>    
+                <h3 class="product_price">$.89</h3> 
+                <ul class="tags">
+                <li id="tag" class="organic_tag">
+                Organic</li>   
+                <li id="tag" class="vegan_tag">
+                Vegan    
+                 </li>   
+                    </ul>
+
+                </div>
+                </a>
+        </div>
+
+
+
+        <div class="single_item">
+            <a href="#" class="item_link">
+                <img src="https://source.unsplash.com/collection/1926682/200x160">
+                <div id="text_container">
+                <p class="product_name">Blueberries</p>
+                <p class="product_farm">Humble Farms</p>    
+                <h3 class="product_price">$2.16</h3> 
+                <ul class="tags">
+                <li id="tag" class="organic_tag">
+                Organic</li>   
+                   
+                    </ul>
+
+                </div>
+                </a>
+        </div>
+
+
+
+        <div class="single_item">
+            <a href="#" class="item_link">
+                <img src="https://source.unsplash.com/5R2JmImJa30/200x160"><div id="text_container">
+                <p class="product_name">Lettuce</p>
+                <p class="product_farm">Vegetable Farms</p><h3 class="product_price">$.93</h3> 
+                <ul class="tags">
+                <li id="tag" class="organic_tag">Organic</li>       
+                    </ul> 
+                </div></a></div>
+
+    </div>
+
+    <!--Footer-->
+
+
+    <div id="footer">
+        <p>Copyright &copy; 2018 Humble Roots. All Rights Reserved</p>
+
+        <ul>
+            <li><a>Contact us</a></li>
+            <li><a>Subscribe</a></li>
+            <li><a><i class="fab fa-facebook-f"></i></a></li>
+            <li><a><i class="fab fa-twitter"></i></a></li>
+            <li><a><i class="fab fa-instagram"></i></a></li>
+        </ul>
+
+    </div>
+
+</body>
+
+</html>

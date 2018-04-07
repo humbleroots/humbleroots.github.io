@@ -1,0 +1,1327 @@
+@import url('https://rsms.me/inter/inter-ui.css');
+
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,700');
+
+
+#splash_content,
+#wrapper {
+    max-width: 688px;
+}
+
+#bottom_content,
+#more_content {
+    max-width: 890px;
+}
+
+body {
+    font-family: "Inter UI";
+    margin: 0 0 0 0;
+    color: #222222;
+}
+
+/* Nav Bar*//* Nav Bar*//* Nav Bar*//* Nav Bar*//* Nav Bar*//* Nav Bar*//* Nav Bar*/
+
+#nav_bar {
+    height: 50px;
+    background-color: #43e97b;
+/*  background-color: #57D476; */
+/*    background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%); */
+    margin-top: 0px;
+    margin-right: 0px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    overflow: hidden;
+}
+
+
+#nav_search {
+    display: inline-block;
+    height: 70%;
+    width: 50%;
+    margin-top: 7px;
+    margin-left: 25px;
+    font-size: 15px;
+    border: 0px;
+    padding-left: 10px;
+    border-radius: 5px;
+    font-family: "Nunito";
+    
+    
+}
+
+#nav_search:focus {
+    outline: none;
+	color: #222222;
+    font-weight: 100px;
+}
+
+#logo {
+    float: left;
+    margin-top: 5px;
+    margin-left: 25px;
+    height: 40px;
+}
+
+
+#menu_icon{
+    background: url(menu_icon.svg);
+    display: hidden;
+    width: 34px;
+    height: 34px;
+    
+}
+
+
+#nav_bar nav{
+    float: right;
+	
+}
+
+#nav_bar ul {
+    list-style: none;
+    float: right;
+    margin-right: 0px;
+    padding-left: 0px;
+    margin-bottom: 0px;
+    margin-top: 15px;
+}
+
+#nav_bar li {
+    display: inline-block;
+    margin-right: 50px;
+    float: left;
+}
+
+#nav_bar li a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-family: "Nunito";
+    transition: 0.3s ease all !important;
+
+}
+
+#nav_bar li a:hover {
+	border-bottom: 3px solid white; 
+}
+
+#shopping_cart {
+    float: right;
+    margin-right: 50px;
+    margin-top: -5px;
+    height: 30px;
+}
+
+/* VIDEO BANNER*//* VIDEO BANNER*//* VIDEO BANNER*//* VIDEO BANNER*//* VIDEO BANNER*/
+
+
+/* this idea has since been abandoned, but will be resued by me for a future project. so disregard this portion.*/
+
+#video_banner {
+    margin-left: 0px;
+    margin-top: 50px;
+    height: 416px;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+
+}
+
+
+#video_frame {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    height: 416px;
+    margin-left: 0px;
+    overflow: hidden;
+    z-index: -99;
+
+}
+
+
+#video_frame img{
+    width: 100%;
+    height: 100%;
+    margin-top: 0px;
+    
+}
+
+
+#video {
+    width: 100%;
+    height: 150%;
+    margin-top: -100px;
+}
+
+
+/* Splash Content*//* Splash Content*//* Splash Content*//* Splash Content*//* Splash Content*/
+
+#splash_content {
+    margin: 0 auto;
+    margin-bottom: 100px;
+    height: 416px;
+}
+
+#splash_header {
+    position: absolute;
+    top: 100px;
+    width: 350px;
+    font-size: 45px;
+    color: white;
+    font-family: 'Inter UI';
+
+}
+
+#wrapper {
+    margin: 0 auto;
+    position: absolute;
+    top: 320px;
+    width: 100%;
+    height: 50px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+
+
+#icons{
+    width: 1%;
+    margin-left: 10px;
+    color: rgb(200,200,200);
+}
+
+
+#search_produce {
+    width: 37%;
+    height: 50px;
+    font-size: 20px;
+    display: inline;
+    border: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    margin-left: 10px;
+    font-weight: 250;
+}
+
+#divider{
+    display: inline;
+    color: #222222;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+
+#search_location {
+    width: 37%;
+    height: 50px;
+    font-size: 20px;
+    display: inline;
+    border: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    margin-left: 15px;
+    font-weight: 250;
+}
+
+
+::placeholder {
+    color: rgb(200, 200, 200);
+    font-weight: 250;
+    
+}
+
+#search_location:focus,
+#search_produce:focus {
+    outline-width: 0;
+    
+}
+
+#submit {
+    float: right;
+    width: 13%;
+    height: 100%;
+    background-color: #43e97b;
+    font-family: "Inter UI";
+    border-radius: 5px;
+    border: 1px solid #43e97b;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    transition: 0.3s ease all !important;
+}
+
+
+
+#submit:hover {
+    cursor: pointer;
+    box-shadow: 0px 2px 4px 0px green;
+}
+
+
+/* Bottom Content*//* Bottom Content*//* Bottom Content*//* Bottom Content*//* Bottom Content*/
+/* this portion was also abandoned.*/
+
+#bottom_content {
+    height: 30%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+
+h1.bottom_header {
+    font-size: 25px;
+    color: #222222;
+    margin: 0px 0px 0px 0px;
+    
+}
+
+#underline{
+    height: 3px;
+    background-color: #222222;
+    margin: 0px 0px 20px 0px;
+    width: 25%;
+    
+}
+
+/* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer *//* Footer */
+
+#footer {
+    height: 58px;
+    color: #222222;
+    width: 100%;
+    
+}
+
+#footer_border {
+    background-color: #222222;
+    height: 2px;
+    width: 101.1%;
+}
+
+#footer ul {
+    float: right;
+    margin-right: 20px;
+    
+}
+
+#footer li {
+    font-weight: 100;
+    text-decoration: none;
+    font-size: 12px;
+    display: inline-block;
+    margin-left: 20px;
+    padding-top: 0px;
+}
+
+#footer a:hover {
+    cursor: pointer;
+}
+
+#footer p{
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 12px;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 18px;
+    padding-top: 0px;
+}
+
+
+/* Single Item *//* Single Item *//* Single Item *//* Single Item *//* Single Item */
+
+
+div.single_item {
+    height: 259px;
+    width: 200px;
+    background-color: #222222;
+    border-radius: 15px;
+    margin-left: 0px;
+    margin-right: 18px;
+    transition: 0.3s ease all !important;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+div.single_item a{
+    text-decoration: none;
+}
+
+div.single_item:hover{
+    box-shadow: 0px 15px 15px 0px grey;
+    cursor: pointer;
+}
+
+div.single_item img {
+    height: 160px;
+    width: 200px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+
+div.single_item ul li{
+    display: inline-block;
+    list-style: none;
+}
+
+p.product_name {
+    color: white;
+    font-size: 15px;
+    margin: 15px 0px 0px 10px;
+    text-decoration: none;
+}
+
+p.product_farm {
+    width: 85px;
+    color: white;
+    font-size: 10px;
+    margin: 0px 0px 0px 10px;
+}
+
+h3.product_price{
+    margin: -38px 10px 0px 0px;
+    color: white;
+    font-size: 35px;
+    float: right;
+    text-decoration: none;
+    width: 90px;
+    
+}
+
+ul.tags {
+    margin: 5px 0px 0px 10px;
+    padding-left: 0px;
+    width: 200px;
+    display: inline-block;
+}
+
+#tag {
+    margin: 0px 5px 0px 0px;
+    font-size: 10px;
+    width: 50px;
+    height: 10px;
+    padding: 2px 1px 5px 1px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+li.organic_tag{
+    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+    color: #222222;
+}
+
+li.vegan_tag {
+    background-color: #FF9500;
+/*    background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%); */
+    color: #222222;
+}
+
+li.pesticide_free{
+    background-color: #FF3B30;
+    color: white;
+    text-decoration: line-through;
+    
+}
+
+/* More Content *//* More Content *//* More Content *//* More Content *//* More Content */
+
+#more_content {
+	margin: 0 auto;
+    margin-bottom: 100px;
+    
+}
+
+#featured_farm {
+    width: 100%;
+    height: 400px;
+}
+
+#featured_farm_img{
+    
+    height: 100%;
+    border-radius: 15px;
+    display: inline-block;
+    
+    
+}
+
+#featured_farm_info {
+    width: 55%;
+    display: inline-block;
+    float: right;
+    border: 3px solid black;
+    height: 100%;
+    border-radius: 15px;
+}
+
+#featured_farm_info h3 {
+    font-size: 50px;
+    text-align: left;
+}
+
+
+
+/* Results Page *//* Results Page *//* Results Page *//* Results Page *//* Results Page *//* Results Page *//* Results Page *//* Results Page *//* Results Page *//* Results Page *//* Results Page *//* Results Page *//* Results Page *//* Results Page *//* Results Page *//* Results Page *//* Results Page *//* Results Page *//* Results Page *//* Results Page *//* Results Page */
+
+
+
+/* Filters *//* Filters *//* Filters *//* Filters *//* Filters *//* Filters *//* Filters */
+
+
+#filter_menu {
+	width: 15%;
+    height: 400px;
+    margin-left: 25px;
+    margin-top: 42px;
+    background-color: white;
+    border-right: 3px solid #c8c8c8;
+    float: left;
+    position: fixed;
+}
+
+#filter_menu h3{
+    padding-top: 50px;
+    margin-top: 0px;
+    margin-left: 15px;
+    font-size: 19px;
+    font-weight: 100;
+}
+
+#price_filter h4 {
+    margin-left: 15px;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+
+#ranges{
+    margin-left: 15px;
+}
+
+#ranges input{
+    width: 40px;
+    height: 25px;
+    display: inline-block;
+    border-radius: 5px;
+    border: 1.5px solid #222222;
+    padding-left: 5px;
+    background-color: white;
+}
+
+#ranges input:focus{
+    color: #222222;
+}
+
+#ranges p{
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 100;
+}
+
+
+#rating_filter h4{
+    margin-left: 15px;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+
+.rating span.star {
+    font-family: 'FontAwesome';
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+}
+
+.rating span.star:before {
+    content: "\f006";
+    padding-right: 5px;
+    color: #222222;
+}
+
+.rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    font-size: 15px;
+    margin-left: 10px;
+    width: 100px;
+}
+
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 15px;
+}
+
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   content: "\f005";
+   position: relative;
+   right: 0; 
+   color: gold;
+}
+
+#tags_filter h4 {
+    margin-left: 15px;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+
+#tags_filter ul{
+    list-style: none;
+    padding-left: 0px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+#tags_filter ul label {
+    font-size: 10px;
+    font-weight: 500;
+}
+
+/* Results *//* Results *//* Results *//* Results *//* Results *//* Results *//* Results */
+
+
+#results_menu{
+    width: 80%;
+    height: 100%;
+    float: right;
+    margin-top: 42px;
+    margin-right: 0px;
+    border-bottom: 3px solid #c8c8c8;
+    margin-bottom: 10px;
+}
+
+#results_menu h1{
+    padding-top: 5px;
+	margin-left: 25px;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 500;
+    border-bottom: 3px solid #222222;
+}
+
+div.dropdown{
+    float: right;
+    margin-top: 25px;
+    margin-right: 50px;
+}
+
+div.dropdown label{
+    font-size: 12px;
+    font-weight: 100;
+}
+
+div.dropdown select {
+    height: 25px;
+    color: white;
+    background-color: #222222;
+}
+
+#actual_results{
+    width: 80%;
+    height: 100%;
+    background-color: white;
+    float: right;
+    margin-top: 0px;
+    margin-right: 0px; 
+    margin-bottom: 50px;    
+}
+
+#actual_results div.single_item{
+    margin-left: 30px;
+	margin-right: 0px;
+}
+
+
+
+/* Item View Page *//* Item View Page *//* Item View Page *//* Item View Page *//* Item View Page *//* Item View Page *//* Item View Page *//* Item View Page *//* Item View Page *//* Item View Page *//* Item View Page *//* Item View Page */
+
+
+#item_view {
+    height: 460px;
+    width: 100%;
+    background-color: #222222;
+    margin-top: 50px;
+}
+
+div.item_image {
+    float: left;
+    height: 460px;
+    width: 61.8%;
+    border-bottom: 1px solid #222222;
+}
+
+div.item_information {
+    float: right;
+    background-color: white;
+    border-bottom: 1px solid #222222;
+    height: 460px;
+    width: 38.2%;
+}
+
+div.item_information h1{
+    font-size: 41px;
+    font-family: "Nunito";
+    font-weight: 900;
+    margin-bottom: 0px;
+    margin-left: 50px;
+}
+
+div.item_information p{
+    font-size: 15px;
+    font-family: "Nunito";
+    font-weight: 100;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    margin-left: 50px;
+}
+
+div.item_price {
+    margin-top: 0px;
+    margin-left: 50px;
+    font-family: "Nunito";    
+    margin-bottom: 5px;
+}
+
+
+div.item_price h3{
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: 900;
+    margin-bottom: 0px;
+
+}
+
+div.item_price h2{
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 0px;
+
+}
+
+div.item_price p{
+    margin-left: 5px;
+    display: inline-block;
+    margin-bottom: 0px;
+
+}
+
+div.item_review{
+    margin-left: 50px;
+    font-family: "Nunito"
+}
+
+div.delivery_tag {
+    margin-left: 50px;
+    width: 150px;
+}
+
+div.delivery_tag p{
+    margin-left: 0px;
+    display: inline-block;
+    margin-top: 0px;
+}
+
+#shipping_tag {
+    display: inline-block;
+}
+
+#shipping_tag h4{
+    border-radius: 8px;
+    padding-top: 5px;
+    font-family: "nunito";
+    font-size: 10px;
+    font-weight: 900;
+    text-align: center;
+    height: 20px;
+    width: 40px;
+    color: white;
+    background-color: #04befe;
+}
+
+#add_to_cart {
+    font-size: 25px;
+    margin-top: 100px;
+    margin-left: 90px;
+    width: 285px;
+    height: 67px;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    background-color: rgb(255,59,48);
+    transition: 0.3s ease all !important;
+    
+}
+
+#add_to_cart:hover {
+    cursor: pointer;
+    box-shadow: 0px 5px 2px 0px #8A211C;
+}
+
+#add_to_cart:focus {
+    outline: none;   
+}
+
+
+/* Success Page *//* Success Page *//* Success Page *//* Success Page *//* Success Page *//* Success Page *//* Success Page *//* Success Page *//* Success Page *//* Success Page *//* Success Page *//* Success Page *//* Success Page *//* Success Page *//* Success Page *//* Success Page *//* Success Page *//* Success Page */
+
+
+#success_banner {
+    height: 263px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+h1.action_success {
+    font-size: 92px;
+    margin-left: 100px;
+    padding-top: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+}
+
+p.action_description {
+    font-size: 21px; 
+    margin-left: 100px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: 100;
+    font-family: "Nunito";
+}
+
+
+#action_options {
+    float: right;
+    margin-top: -120px;
+    margin-right: 150px;
+    width: 285px;
+    height: 150px;
+}
+
+button.basket_link,
+#basket button.proceed_checkout{
+    font-size: 25px;
+    margin-top: 10px;
+    margin-left: 0px;
+    width: 285px;
+    height: 67px;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    background-color: #57D476;
+    transition: 0.3s ease all !important;
+    
+    
+}
+
+button.continue_shopping {
+    font-size: 15px;
+    margin-top: 20px;
+    margin-left: 60px;
+    width: 176px;
+    height: 41px;
+    border-radius: 9px;
+    border: none;
+    color: white;
+    background-color: rgb(200,200,200);
+    transition: 0.3s ease all !important;
+    
+}
+
+button.basket_link:hover,
+#basket button.proceed_checkout:hover {
+    cursor: pointer;
+    box-shadow: 0px 5px 2px 0px #398D4E;
+}
+
+button.continue_shopping:hover {
+    cursor: pointer;
+    box-shadow: 0px 5px 2px 0px grey;
+}
+
+
+/* Basket *//* Basket *//* Basket *//* Basket *//* Basket *//* Basket *//* Basket *//* Basket *//* Basket *//* Basket *//* Basket *//* Basket *//* Basket *//* Basket *//* Basket *//* Basket *//* Basket *//* Basket *//* Basket *//* Basket *//* Basket *//* Basket *//* Basket *//* Basket *//* Basket *//* Basket *//* Basket */
+
+
+#basket{
+    margin-top: 50px;
+    height: 426px;
+    background-color: white;
+}
+
+h1.basket_banner {
+    width: 330px;
+    margin-top: 0px;
+    margin-left: 10%;
+    margin-bottom: 25px;
+    font-size: 57px;
+    padding-top: 50px;
+    padding-left: 0px;
+    border-bottom: 3px dotted #222222;
+}
+
+
+#tally {
+    max-width: 1024px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+#tally tr {
+    text-align: left;
+    font-size: 19px;
+}
+
+#tally th, #tally  td {
+    border-bottom: 3px solid #222222;
+}
+
+td{
+    padding: 15px;
+}
+
+td.item{
+    width: 61%;
+
+}
+
+td.item img{
+    display: inline-block;
+    float: left;
+    margin-left: 0px;
+    margin-right: 0px;
+    border: none;
+    border-radius: 20px;
+    
+    
+}
+
+td.item h1{
+    display: inline-block;
+    float: left; 
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    font-family: "nunito";
+    font-size: 31px;
+    
+}
+
+td.item p{
+    display: inline-block;
+    float: left;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    font-family: "nunito";
+    font-size: 12px;
+    
+}
+
+td div.item_review {
+    float: left;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+td ul.tags{
+    margin-top: 0px;
+    
+}
+
+td #tag {
+    display: inline-block;
+}
+
+
+td.quantity {
+    width: 24%;
+    transition: 0.3s ease all !important;
+}
+
+
+td.quantity input{
+    height: 20px;
+    width: 50px;
+    margin-top: 0px;
+    display: inline-block;
+}
+
+
+td.price {
+    width: 15%;    
+    transition: 0.3s ease all !important;
+}
+
+td.price h1{
+    display: inline-block;
+    font-family: "Nunito";
+    font-weight: 900;
+    font-size: 31px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+
+td.price p{
+    display: inline-block;
+    font-family: "Nunito";
+    font-weight: 900;
+    font-size: 12px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+
+}
+
+div.subtotal {
+    float: right;
+    margin-top: 20px;
+    margin-right: 10%;
+    width: 200px;
+}
+
+div.subtotal h1{
+    display: inline-block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 25px;
+}
+
+div.subtotal p{
+    display: inline-block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    font-size: 19px;
+}
+
+#basket button.proceed_checkout {
+    float: right;
+    margin-right: 10%;
+    margin-top: 5px;
+    font-size: 15px;
+    height: 57px;
+    width: 210px;
+}
+
+
+/* Delivery Options *//* Delivery Options *//* Delivery Options *//* Delivery Options *//* Delivery Options *//* Delivery Options *//* Delivery Options *//* Delivery Options *//* Delivery Options *//* Delivery Options */
+
+
+#delivery_body {
+    margin-top: 50px;
+    height: 1000px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#delivery_content{
+    float: left;
+    margin-left: 9%;
+}
+
+h1.checkout_process_header{
+    font-size: 57px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    display: inline-block;
+    width: 460px;
+    border-bottom: 4px solid #222222;
+}
+
+
+div.delivery_option{
+    margin-top: 25px;
+    margin-bottom: 0px;
+    width: 400px;
+}
+
+
+p.delivery_option{
+    font-size: 31px;
+    display: inline-block;
+    margin-top: 0px;
+    margin-left: 15px;
+    margin-bottom: 0px;
+    font-weight: 900;
+}
+
+
+p.delivery_estimate {
+    display: inline-block;
+    font-size: 19px;
+    margin-top: 0px;
+    margin-left: 32px;
+    margin-bottom: 0px;
+    font-family: "nunito";
+    font-weight: 100;
+}
+
+p.time_estimate{
+    display: inline-block;
+    font-size: 19px;
+    margin-left: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #57D476;
+    font-family: "nunito";
+    font-weight: 900;
+}
+
+
+#map{
+    height: 415px;
+    width: 38%;
+    margin-top: 50px;
+    float: right;
+    display: inline-block;
+    border-radius: 25px;
+    margin-right: 9%;
+}
+
+
+#delivery_content #action_options {
+    margin-top: 25px;
+    margin-right: 0px;
+    float: left;
+	
+}
+
+#delivery_content button.continue_shopping {
+        margin-left: 19%;
+}
+
+div.breadcrumbs {
+    max-width: 82%;
+    margin: 0 auto;
+    padding-top: 25px;
+    margin-bottom: 25px;
+}
+
+
+div.circle {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #43E97B;
+    border-radius: 25px;
+    text-align: center;
+}
+
+div.connector{
+    height: 3px;
+    background-color: #C8C8C8;
+    width: 30%;
+    display: inline-block;
+}
+
+div.circle p{
+    height: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 15px;
+    padding-bottom: 0px;
+    color: white;
+    font-size: 15px;
+}
+
+div.circle label {
+    text-align: center;
+}
+
+div.breadcrumbs h4{
+    margin-top: 5px;
+    margin-bottom: 0px;
+    display: inline-block;
+}
+
+#delivery_address{
+    width: 500px;
+    margin-top: 50px;
+    display: none;
+    transition: 0.3s ease all !important;
+    
+}
+
+
+#delivery_address label{
+    font-weight: 100;
+}
+
+#delivery_address input{
+    height: 20px;
+    width: 90%;
+    margin-bottom: 10px;
+    font-size: 12px;
+    border: 1px solid #c8c8c8;
+    padding-left: 5px;
+    border-radius: 5px;
+    font-family: "Nunito";
+}
+
+#delivery_address select{
+    width: 150px;
+    height: 25px;
+}
+
+
+/* Payment Information *//* Payment Information *//* Payment Information *//* Payment Information *//* Payment Information *//* Payment Information *//* Payment Information *//* Payment Information *//* Payment Information */
+
+
+#payment_content{
+    margin-top: 50px;
+    height: 800px;
+}
+
+div.payment_information{
+    width: 51%;
+    height: 70%;
+    margin-left: 9%;
+}
+
+div.payment_information p{
+    margin-bottom: 5px;
+    margin-top: 0px;
+}
+
+div.payment_information i{
+    font-family: "fontawesome";
+    font-size: 57px;
+    font-weight: 100;
+    margin-right: 12px;
+}
+
+div.payment_information input{
+    margin-bottom: 10px;
+    height: 50px;
+    width: 100%;
+    border: 2px solid #c8c8c8;
+    border-radius: 15px;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+div.payment_information select{
+    height: 55px;
+    margin-left: 25px;
+    margin-right: 20px;
+    font-size: 15px;
+}
+
+div.payment_information input::placeholder{
+    color: black;
+    font-size: 15px;
+    font-family: "inter ui";
+    font-weight: 100;
+}
+
+#payment_content button.basket_link{
+    margin-top: 35px;
+}
+
+#payment_content button.basket_link i{
+    font-size: 30px;
+    font-weight: 900;
+	
+}
+
+#payment_content button.continue_shopping{
+    margin-left: 8.5%;
+	
+}
+
+div.quick_summary{
+    float: right;
+    width: 24%;
+    margin-top: 50px;
+    margin-right: 9%;
+    height: 600px;
+    background-color: white;
+    border: 2px solid #c8c8c8;
+    border-radius: 25px;
+}
+
+
+div.quick_summary h1{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    
+}
+
+div.quick_summary table{
+    width: 82%;
+    margin-left: 9%;
+    margin-right: 9%;
+}
+
+div.quick_summary tr{
+    text-align: left;
+    font-size: 12px;
+    font-family: "nunito";
+}
+
+
+div.quick_summary td{
+    border-bottom: 3px dotted #c8c8c8;
+}
+
+div.quick_summary tr h2{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+div.quick_summary tr h3 {
+    font-size: 25px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+
+/* Summary *//* Summary *//* Summary *//* Summary *//* Summary *//* Summary *//* Summary *//* Summary *//* Summary *//* Summary *//* Summary *//* Summary *//* Summary *//* Summary *//* Summary *//* Summary *//* Summary *//* Summary */
+
+
+#summary_content{
+    margin-top: 50px;
+    height: 1250px;
+}
+
+#summary_content div.quick_summary{
+    float: none;
+    max-width: 24%;
+    margin: 0 auto;
+    height: 750px;
+    
+}
+
+#summary_content div.checkout_buttons{
+    float: none;
+    max-width: 24%;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+
+/* Thank You*//* Thank You*//* Thank You*//* Thank You*//* Thank You*//* Thank You*//* Thank You*//* Thank You*//* Thank You*//* Thank You*/
+
+
+#continue_shopping:hover{
+    cursor: pointer;
+    box-shadow: 0px 5px 2px 0px #0384B0;
+}
+
+
+
+
+/* Responsiveness *//* Responsiveness *//* Responsiveness *//* Responsiveness *//* Responsiveness *//* Responsiveness *//* Responsiveness *//* Responsiveness *//* Responsiveness *//* Responsiveness *//* Responsiveness *//* Responsiveness *//* Responsiveness *//* Responsiveness *//* Responsiveness *//* Responsiveness */
+
